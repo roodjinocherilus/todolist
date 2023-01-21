@@ -7,9 +7,10 @@ import { deleteTask } from './modules/delete';
 const addBtn = document.getElementById('add-btn');
 const deleteBtn = document.getElementById('delete-btn');
 import { tasks } from './modules/fill-render';
+import { TaskList } from './modules/add-task';
 
 
-
+TaskList.innerHTML += fillList()
 
 // Event Listener for button and Enter Keypress that call addTaskEvent
 addBtn.addEventListener('click', addTaskEvent);
