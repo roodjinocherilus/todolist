@@ -4,8 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wbpack Exercise</title>
-<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="print.bundle.js"></script></head>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="task.bundle.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
+    <div id="todo" class="todo">
+        <ul class="todolist"id="todolist"> 
+       <li class="title"> Today's To Do</li>
+      
+       <li id="todo-input"><input type="text" placeholder="Add your items"></li>
+       <ul id="task-list">
+      </ul>
+       <li><button>Clear all Completed</button</li>
+    </ul>
+    </div>
 </body>
 </html>

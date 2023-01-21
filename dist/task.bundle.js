@@ -1,4 +1,3 @@
-"use strict";
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
  * This devtool is neither made for production nor for readable output files.
@@ -7,21 +6,21 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-(self["webpackChunkwebpack_demo"] = self["webpackChunkwebpack_demo"] || []).push([["print"],{
+(self["webpackChunkwebpack_demo"] = self["webpackChunkwebpack_demo"] || []).push([["task"],{
 
-/***/ "./src/print.js":
+/***/ "./src/tasks.js":
 /*!**********************!*\
-  !*** ./src/print.js ***!
+  !*** ./src/tasks.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ printMe)\n/* harmony export */ });\nfunction printMe() {\n    console.log('I get called from print.js!');\n  }\n\n//# sourceURL=webpack://webpack-demo/./src/print.js?");
+eval("const tasks = [\n  {\n    description: 'Take a Shower',\n    completed: false,\n    index: 1,\n  },\n  {\n    description: 'Cook today',\n    completed: false,\n    index: 10,\n  },\n  {\n    description: 'Buy groceries',\n    completed: false,\n    index: 3,\n  },\n  {\n    description: 'Microverse Homework',\n    completed: false,\n    index: 8,\n  },\n  {\n    description: 'Todo List Project',\n    completed: false,\n    index: 4,\n  },\n];\n\nmodule.exports = tasks;\n\n//# sourceURL=webpack://webpack-demo/./src/tasks.js?");
 
 /***/ })
 
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ var __webpack_exports__ = (__webpack_exec__("./src/print.js"));
+/******/ var __webpack_exports__ = (__webpack_exec__("./src/tasks.js"));
 /******/ }
 ]);
