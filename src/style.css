@@ -1,7 +1,59 @@
-.hello {
-    color: red;
-  }
 
-  body {
-    background-color: bisque;
+* {
+  margin: 0;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.todo{
+  width: 300px;
+  height: 200px;
+  display: block;
+  margin: auto ;
+}
+input[type="text" ] {
+width: 100%;
+height: 100%;
+border: none;
+}
+
+input[type="checkbox" ] {
+  margin-right: 5px;
+}
+ul {
+  padding: 0;
+  width: 100%;
+  
+}
+
+li{
+  text-decoration: none;
+  list-style-type: none;
+  border-bottom: 1px solid gray;
+  padding: 5px 0;
+  margin: 5px 0;
+  
+}
+
+button {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  background-color: none;
+  height: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+
+}
+
+button::hover{
+  color: red;
+  background-color: red;
 }
