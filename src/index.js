@@ -1,23 +1,13 @@
+import { add } from 'lodash';
 import './style.css';
+import { addTaskEvent } from './modules/add-task';
+import { taskDescription } from './modules/add-task';
+const addBtn = document.getElementById('add-btn');
 
-let tasks = [];
-// array of objects
-const taskList = document.getElementById('task-list'); // ul dom element
-
-// function that fill the Todo List
-export const fillList = (tasks) => {
-  let taskList = '';
-  tasks.forEach((task) => {
-    const taskItem = `<li id="todo-item"><input type="checkbox">${task.description}</li>`;
-    taskList += taskItem;
-  });
-  return taskList;
-};
-
-// function that sort on index and render taskList
-window.onload = () => {
-  tasks.sort((a, b) => a.index - b.index);
-  taskList.innerHTML = fillList(tasks);
-};
-
-
+// Event Listener for button and Enter Keypress that call addTaskEvent
+addBtn.addEventListener('click', addTaskEvent);
+taskDescription.addEventListener('keypress', (event) => {
+  if (event.key === 'Enter') {
+    addTaskEvent();
+  }
+})
