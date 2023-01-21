@@ -1,11 +1,11 @@
 import './style.css';
 
-const tasks = require('./tasks.js');
+let tasks = [];
 // array of objects
 const taskList = document.getElementById('task-list'); // ul dom element
 
 // function that fill the Todo List
-const fillList = (tasks) => {
+export const fillList = (tasks) => {
   let taskList = '';
   tasks.forEach((task) => {
     const taskItem = `<li id="todo-item"><input type="checkbox">${task.description}</li>`;
@@ -19,3 +19,5 @@ window.onload = () => {
   tasks.sort((a, b) => a.index - b.index);
   taskList.innerHTML = fillList(tasks);
 };
+
+
