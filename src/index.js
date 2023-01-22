@@ -1,8 +1,10 @@
 import './style.css';
 import { fillList } from './modules/fill-render.js';
 import { addTaskEvent, taskDescription, TaskList } from './modules/add-task.js';
-// eslint-disable-next-line import/named
-import { deleteTask } from './modules/delete.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+  fillList();
+});
 
 const addBtn = document.getElementById('add-btn');
 
@@ -16,11 +18,10 @@ taskDescription.addEventListener('keypress', (event) => {
   }
 });
 
-const deleteButtons = document.querySelectorAll('.delete');
-deleteButtons.forEach((button) => {
-  button.addEventListener('click', (event) => {
-    const index = event.target.value;
-    deleteTask(index);
-    fillList();
-  });
-});
+const clearAll = () => {
+  localStorage.setItem('tasks', JSON.stringify([]));
+  fillList();
+};
+
+const clearAllButton = document.querySelector('.clear');
+clearAllButton.addEventListener('click', clearAll);
