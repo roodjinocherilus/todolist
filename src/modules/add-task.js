@@ -14,6 +14,7 @@ tasks.push({
 });
   tasks.sort((a,b) => a.index - b.index)
   localStorage.setItem("tasks", JSON.stringify(tasks));
+  fillList();
 }
 
 // function that call the addTask function if description is not null
@@ -23,7 +24,9 @@ export const addTaskEvent = () => {
     return;
   }
   addTask(description);
-  fillList();
   taskDescription.value= ""
 }
+
+
+
 

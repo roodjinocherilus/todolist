@@ -21,3 +21,13 @@ taskDescription.addEventListener('keypress', (event) => {
 })
 
 
+
+let deleteButtons = document.querySelectorAll('.delete');
+deleteButtons.forEach(function(button) {
+    button.addEventListener("click", function(event) {
+        let index = event.target.value;
+        deleteTask(index);
+        fillList();
+    });
+});
+
