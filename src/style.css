@@ -16,25 +16,23 @@ body {
   display: block;
   margin: auto;
 }
-.todo-input{
+
+.todo-input {
   display: flex;
   justify-content: space-between;
 }
 
-.todo-item{
+.todo-item {
   display: flex;
   justify-content: space-between;
 }
-
 
 input[type="text"] {
   width: 100%;
-  height:20px;
+  height: 20px;
   border: none;
   display: block;
 }
-
-
 
 input[type="checkbox"] {
   margin-right: 5px;
@@ -63,5 +61,3 @@ li {
   border: none;
   cursor: pointer;
 }
-
-
