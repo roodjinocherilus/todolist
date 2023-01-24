@@ -5,6 +5,7 @@ import deleteTask from './delete.js';
 export const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 
 // function that fill the Todo List
+// function that fill the Todo List
 
 const attachEventListeners = () => {
   const deleteButtons = document.querySelectorAll('.delete');
