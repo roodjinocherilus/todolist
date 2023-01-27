@@ -2,8 +2,6 @@
 import { TaskList } from './add-task.js';
 import deleteTask from './delete.js';
 
-export const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
-
 // function that fill the Todo List
 // function that fill the Todo List
 
@@ -33,5 +31,5 @@ export const fillList = () => {
     TaskList.innerHTML = taskList;
   }
   attachEventListeners();
-  return TaskList.innerHTML;
+  // return TaskList.innerHTML;
 };

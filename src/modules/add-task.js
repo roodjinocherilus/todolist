@@ -1,5 +1,6 @@
 // eslint-disable-next-line import/no-cycle
-import { fillList, tasks } from './fill-render.js';
+import { fillList} from './fill-render.js';
+
 
 export const taskDescription = document.getElementById('task-description');
 export const TaskList = document.getElementById('task-list'); // ul dom element
@@ -7,13 +8,16 @@ export const TaskList = document.getElementById('task-list'); // ul dom element
 // function that adds items to the Array
 
 const addTask = (description, completed = false) => {
+  const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
   const index = tasks.length + 1;
+  console.log(tasks)
   tasks.push({
     description,
     completed,
     index,
   });
   tasks.sort((a, b) => a.index - b.index);
+  console.log(tasks)
   localStorage.setItem('tasks', JSON.stringify(tasks));
   fillList();
 };
