@@ -29,10 +29,6 @@ input[type="text"] {
   display: block;
 }
 
-input[type="checkbox"] {
-  margin-right: 5px;
-}
-
 ul {
   padding: 0;
   width: 100%;
