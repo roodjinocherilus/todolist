@@ -79,7 +79,6 @@ input[type="checkbox"] {
   display: inline;
 }
 
-
 .completed {
   text-decoration: line-through;
 }
