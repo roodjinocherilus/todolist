@@ -1,21 +1,27 @@
 import './style.css';
+import fillList from './modules/fill-render.js';
+import { addTaskEvent, taskDescription, TaskList } from './modules/add-task.js';
 
-const tasks = require('./tasks.js');
-// array of objects
-const taskList = document.getElementById('task-list'); // ul dom element
+document.addEventListener('DOMContentLoaded', () => {
+  fillList();
+});
 
-// function that fill the Todo List
-const fillList = (tasks) => {
-  let taskList = '';
-  tasks.forEach((task) => {
-    const taskItem = `<li id="todo-item"><input type="checkbox">${task.description}</li>`;
-    taskList += taskItem;
-  });
-  return taskList;
+const addBtn = document.getElementById('add-btn');
+
+TaskList.innerHTML += fillList();
+
+// Event Listener for button and Enter Keypress that call addTaskEvent
+addBtn.addEventListener('click', addTaskEvent);
+taskDescription.addEventListener('keypress', (event) => {
+  if (event.key === 'Enter') {
+    addTaskEvent();
+  }
+});
+
+const clearAll = () => {
+  localStorage.setItem('tasks', JSON.stringify([]));
+  fillList();
 };
 
-// function that sort on index and render taskList
-window.onload = () => {
-  tasks.sort((a, b) => a.index - b.index);
-  taskList.innerHTML = fillList(tasks);
-};
+const clearAllButton = document.querySelector('.clear');
+clearAllButton.addEventListener('click', clearAll);
