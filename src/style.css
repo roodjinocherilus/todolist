@@ -78,3 +78,7 @@ input[type="checkbox"] {
 .task-description {
   display: inline;
 }
+
+.completed {
+  text-decoration: line-through;
+}

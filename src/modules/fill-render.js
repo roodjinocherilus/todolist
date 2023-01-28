@@ -2,6 +2,7 @@
 import { TaskList } from './add-task.js';
 import deleteTask from './delete.js';
 import editTask from './edit.js';
+import updateStatus from './status.js';
 // function that fill the Todo List
 // function that fill the Todo List
 
@@ -49,6 +50,17 @@ const attachEditEventListeners = () => {
   });
 };
 
+const attachCheckboxEventListeners = () => {
+  const checkboxes = document.querySelectorAll('.checkbox');
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener('change', (event) => {
+      const index = event.target.value;
+      const isCompleted = event.target.checked;
+      updateStatus(index, isCompleted);
+    });
+  });
+};
+
 const fillList = () => {
   let taskList = '';
   const tasks = JSON.parse(localStorage.getItem('tasks'));
@@ -56,7 +68,7 @@ const fillList = () => {
     for (let i = 0; i < tasks.length; i += 1) {
       const taskItem = `<li id="todo-item" class="todo-item">
       <div class="text">
-      <input type="checkbox"><p class=" task-description task-description${tasks[i].index}" >${tasks[i].description}</p>
+      <input type="checkbox" class="checkbox" value=${tasks[i].index}><p class=" task-description task-description${tasks[i].index} ${tasks.completed ? 'completed' : ''} " >${tasks[i].description}</p>
       </div>
       <div class="all-btn">
       <button class="edit" id="edit-btn" value=${tasks[i].index}>Edit</button>
@@ -73,6 +85,7 @@ const fillList = () => {
   }
   attachEventListeners();
   attachEditEventListeners();
+  attachCheckboxEventListeners();
 };
 
 export { fillList as default };
