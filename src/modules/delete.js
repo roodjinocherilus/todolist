@@ -5,6 +5,7 @@ function deleteTask(index) {
     tasks[i].index = i + 1;
   }
   localStorage.setItem('tasks', JSON.stringify(tasks));
+  
 }
 
 export { deleteTask as default };

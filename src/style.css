@@ -22,11 +22,6 @@ body {
   justify-content: space-between;
 }
 
-.todo-item {
-  display: flex;
-  justify-content: space-between;
-}
-
 input[type="text"] {
   width: 100%;
   height: 20px;
@@ -60,4 +55,30 @@ li {
   height: 30px;
   border: none;
   cursor: pointer;
+}
+
+.todo-item {
+  width: 100%;
+  display: flex;
+  height: 25px;
+}
+
+.text {
+  width: 50%;
+}
+
+.all-btn {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  display: inline;
+}
+
+.task-description {
+  display: inline;
 }
