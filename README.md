@@ -4,7 +4,8 @@
 
 <div align="center">
 
-  <h3><b>Awesome Book Projects</b></h3>
+  <h3><Todo List</b></h3>
+  Todo List is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete... You can also edit if you need to .
 
 </div>
 
@@ -51,9 +52,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[This project is using an array of objects to save the values]**
-- **** This project preserve data in the local storage
-- **** 
+- ***[This project is using an array of objects to save the values]***
+- **** This project preserve data in the local storage ***
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
