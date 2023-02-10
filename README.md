@@ -5,7 +5,7 @@
 <div align="center">
 
   <h3><Todo List</b></h3>
-  Todo List is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete... You can also edit if you need to .
+  Todo List is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete... You can also edit the items in your list if you need to.
 
 </div>
 
@@ -38,7 +38,7 @@
 # 📖 [Todo List] <a name="about-project"></a>
 
 
-**Todo List** is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete..
+**Todo List**is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete... You can also edit the items in your list if you need to.
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML
@@ -53,7 +53,7 @@
 ### Key Features <a name="key-features"></a>
 
 - ***[This project is using an array of objects to save the values]***
-- **** This project preserve data in the local storage ***
+- ****[This project preserve data in the local storage]***
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
