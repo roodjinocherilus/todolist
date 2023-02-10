@@ -52,8 +52,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- ***[This project is using an array of objects to save the values]***
-- ****[This project preserve data in the local storage]***
+- *** This project is using an array of objects to save the values ***
+- **** This project preserve data in the local storage ***
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
