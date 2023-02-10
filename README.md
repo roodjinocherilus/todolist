@@ -73,7 +73,7 @@ This Project iss Web App for a Todo List is a tool that helps you organize your 
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+
 To get a local copy up and running, follow these steps.
 ### Prerequisites
 
