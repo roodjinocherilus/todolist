@@ -5,7 +5,7 @@
 <div align="center">
 
   <h3><Todo List</b></h3>
-  Todo List is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete... You can also edit the items in your list if you need to.
+  Todo List is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete. You can also edit the items in your list if you need to.
 
 </div>
 
